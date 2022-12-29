@@ -4,7 +4,7 @@ const double PI = 4*atan(1); // Making a constant PI variable
 int x, y; // Integer x represents amount of degrees and y number of decimals
 char a; // Simple char for 'Yes' and 'No'
 
-int main() {
+void toRadians() {
     std::cout << "Unesite vrednost ugla za konvertovanje u radijane: "; std::cin >> x; // "Input the value of angle: "
     double radijan = x * PI/180; // initializing radian
     std::cout << "Ugao koji ste uneli u radijanima: " << radijan << std::endl; // "Number you entered: "
@@ -34,5 +34,9 @@ int main() {
     } else if (a == 'N' || a == 'n') {
         std::cout << "Vas odgovor je 'NE'. Vas broj bez zaokrugljivanja iznosi: " << radijan << std::endl; // "Your answer is 'NO'. Your number of radians without rounding: "
     }
+}
+
+int main() {
+    toRadians();
     return 0;
 }
